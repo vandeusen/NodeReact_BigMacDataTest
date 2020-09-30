@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.currencyInputForm
+{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+  margin:0px auto;
+}
+.currencyInputForm p
+{
+  padding:0px;
+  margin-top:0px;
+  margin-bottom: 0px;
+  margin-left:0px;
+  margin-right: 1%;
+}
+
+.currencyInputForm input
+{
+  padding:0.3%;
+  font-size: 12px;
+  width:33%;
+  
+}
+.currencyInputForm button
+{
+  align-self:stretch;
+  background-color: #94270C;
+  color:#ffffff;
+  font-weight: bold;
+  border:none;
+}
+.currencyInputForm button:hover
+{
+  background-color: #f03607;
+}
+.formResult
+{
+  display: flex;
+  justify-content: space-between;
+  width:50%;
+  background-color: #f5f5f5;
+  margin:2% auto;
+  padding:2%;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 320px)
+{
+    .formResult, .currencyInputForm
+    {  
+        width:95%;
+    }
+    .currencyInputForm
+    {
+      flex-wrap: wrap;
+    }
+    .currencyInputForm p
+    {
+        margin-bottom: 1.5%;
+    }
+    .currencyInputForm input
+    {
+      width:50%;
+      padding:2.5%;
+    }
+}
+@media only screen and (min-width: 320px) {
+  .formResult, .currencyInputForm
+    {  
+        width:80%;
+    }
+    .currencyInputForm
+    {
+      flex-wrap: wrap;
+    }
+    .currencyInputForm p
+    {
+        margin-bottom: 1.5%;
+    }
+    .currencyInputForm input
+    {
+      width:50%;
+      padding:2.5%;
+    }
+}
+@media only screen and (min-width: 768px){
+  .formResult, .currencyInputForm
+    {  
+        width:75%;
+    }
+    .currencyInputForm
+    {
+      flex-wrap: wrap;
+    }
+    .currencyInputForm p
+    {
+        margin-bottom: 1.5%;
+    }
+    .currencyInputForm input
+    {
+      width:50%;
+      padding:2.5%;
+    }
+}
+@media only screen and (min-width: 1000px){
+  .formResult, .currencyInputForm
+    {  
+        width:60%;
+    }
+    .currencyInputForm
+    {
+      flex-wrap: nowrap;
+    }
+    .currencyInputForm p
+    {
+        margin-bottom:0px;
+    }
+    
+}
+@media only screen and (min-width: 1440px) {
+  .formResult, .currencyInputForm
+    {  
+        width:45%;
+    }
+    .currencyInputForm
+    {
+      flex-wrap: nowrap;
+    }
+    .currencyInputForm p
+    {
+        margin-bottom:0px;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-bottom:10px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
